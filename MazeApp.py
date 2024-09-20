@@ -1,6 +1,7 @@
+import sys
 from MazeAlgorithm import *
 
-maze = Maze("maze5.txt")
+maze = Maze(sys.argv[1])
 
 if maze.solve():
     maze.res_display()
