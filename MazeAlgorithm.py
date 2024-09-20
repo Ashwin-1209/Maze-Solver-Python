@@ -193,10 +193,6 @@ class Maze:
                 return self.solution
 
             node = frontier.remove()
-            #if node.state == self.start or node.state == self.goal:
-            #    pass
-            #else:
-            #    self.maze[node.state[0]][node.state[1]] = "-"
             self.num_explored += 1
 
             if node.state == self.goal:
